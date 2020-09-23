@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</Source>
+    <SmallTileSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</SmallTileSource>
+    <MediumTileSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</MediumTileSource>
+    <WideTileSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</WideTileSource>
+    <LargeTileSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</LargeTileSource>
+    <AppIconSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</AppIconSource>
+    <SplashScreenSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\genev\OneDrive\School\C#\Final Project\GenevieveSaabFinalProject\GenevieveSaabFinalProject\Assets\Cake.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

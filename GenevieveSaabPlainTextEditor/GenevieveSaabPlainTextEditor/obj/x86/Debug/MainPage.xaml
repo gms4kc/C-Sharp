@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="GenevieveSaabPlainTextEditor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GenevieveSaabPlainTextEditor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <MenuBar Background="Lavender">
+                    <MenuBarItem Title="File">
+                        <MenuFlyoutItem x:ConnectionId='4' Text="New"                  />
+                        <MenuFlyoutItem x:ConnectionId='5' Text="Open"                   />
+                        <MenuFlyoutItem x:ConnectionId='6' Text="Save" Name="Save"                   />
+                        <MenuFlyoutItem x:ConnectionId='7' Text="Save As"                     />
+                        <MenuFlyoutItem x:ConnectionId='8' Text="Exit"                   />
+                    </MenuBarItem>
+
+                    <MenuBarItem Title="Help">
+                        <MenuFlyoutItem x:ConnectionId='3' Text="About"                    />
+                    </MenuBarItem>
+                </MenuBar>
+
+                <TextBox x:ConnectionId='2' Name="TextBox" Background="LavenderBlush" Text=""                                   TextWrapping="Wrap" AcceptsReturn="True" Height="auto" MinHeight="300" Width="auto" ScrollViewer.VerticalScrollMode="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"                          />
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

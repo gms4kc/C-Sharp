@@ -1,0 +1,1 @@
+C:\Users\genev\OneDrive\School\C#\Assignments\M8\GenevieveSaabPlainTextEditor\GenevieveSaabPlainTextEditor\GenevieveSaabPlainTextEditor.csproj;x86

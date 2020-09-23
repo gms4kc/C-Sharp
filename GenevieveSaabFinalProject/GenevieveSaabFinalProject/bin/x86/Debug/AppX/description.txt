@@ -1,0 +1,36 @@
+﻿Program Description: This UWP project is a game called "Cake Creator." There are two game modes: creative and challenge.
+					 
+					 In creative, users can freely click on the radio buttons to make any cake. There's also a button
+					 when the cake is done that shows a positive comment. 
+					 
+					 In challenge, players need to try to match the customer's order and there's a button to submit 
+					 the cake when they're done. If the cake is incorrect, "try again" will be shown in the comment 
+					 box, otherwise there will be a positive comment. The open and save features allow players to 
+					 save their points and come back to the same order later.
+
+Program Requirements:
+-Feature delivery: The target features are all included (two game modes, background music, save feature).
+
+-Techniques: 
+	-Loops: CreativeModel.cs lines 58-63
+	-Methods: Many methods included in MainPage.xaml.cs, ChallengeModel.cs, and CreativeModel.cs
+	-Classes: The classes I created are in ChallengeModel.cs and CreativeModel.cs
+	-Inheritance: The ChallengeModel is a subclass of the CreativeModel to allow the subclass to have access to the superclass's
+				  variables.
+	-Lists: There are two string list, one in ChallengeModel.cs line 14 and the other in CreativeModel.cs line 20.
+	-MVC: The models are ChallengeModel.cs and CreativeModel.cs. The view is found in MainPage.xaml. And the controller is in 
+		 MainPage.xaml.cs.
+    -Multithreading: A thread is used in CreativeModel.cs lines 18 (declaration), 44-48 (start), 56-64 (update), 70-73 (end).
+	-Searching: A lot of searching through the string lists is done in MainPage.xaml.cs. Examples: CakeDoneButton_Click method 
+				lines 573-599 and OrderReadyButton_Click method lines 306-350.
+	-Exception Handling: MainPage.xaml.cs lines 318-349, 519-539, 575-598.
+
+-Runtime: No issues with runtime and errors dealt with exception handling to avoid program crashing. 
+
+-Documentation: This document, the video demo, code comments, and instructions in the program cover all aspects of application.
+				Note about videos: The code demo shows all the code, and there's a separate game demo to show the features because only one
+									window was able to be recorded at a time. Also, the music in the game demo didn't record well in the video.
+
+-GUI: UI is laid out in MainPage.xaml with a uniform colorscheme and fonts with proper alignment and clearly labeled controls.
+
+-Proposal: Organized proposal submitted on time. 

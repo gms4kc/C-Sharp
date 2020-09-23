@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="GenevieveSaabFinalProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GenevieveSaabFinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="448" Width="861">
+
+    <Grid Margin="0,0,435,317">
+        <Canvas Margin="0,0,-430,-314" Background="LavenderBlush">
+            <MenuBar Margin="0,0,0,960" Background="Lavender">
+                <MenuBarItem Width="55" Title="File">
+                    <MenuFlyoutItem Name="Open" Text="Open" Click="Open_Click"></MenuFlyoutItem>
+                    <MenuFlyoutItem Name="Save" Text="Save" Click="Save_Click"></MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem Width="60" Title="Mode">
+                    <MenuFlyoutItem Name="Creative" Text="Creative" Click="Creative_Click"></MenuFlyoutItem>
+                    <MenuFlyoutItem Name="Challenge" Text="Challenge" Click="Challenge_Click"></MenuFlyoutItem>
+                </MenuBarItem>
+                <MenuBarItem Title="Help" Width="69">
+                    <MenuFlyoutItem Name="HowToPlay" Text="How To Play" Click="HowToPlay_Click"></MenuFlyoutItem>
+                    <MenuFlyoutItem Name="About" Text="About" Click="About_Click"></MenuFlyoutItem>
+                </MenuBarItem>
+            </MenuBar>
+            <Image Name="CakeDisplay" Height="144" Canvas.Left="343" Canvas.Top="125" Width="171"/>
+            <Border BorderThickness="5" BorderBrush="Lavender" Height="211" Width="383" Canvas.Left="237" Canvas.Top="91"/>
+
+            <TextBlock Canvas.Left="101" Canvas.Top="309" Text="Shapes" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" TextDecorations="Underline" FontWeight="Normal"/>
+            <RadioButton GroupName="Shape" Name="Circle" Tag="Circle" Content="Circle" Canvas.Left="70" Canvas.Top="333" Click="RadioButton_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="Shape" Name="Rectangle" Tag="Rectangle" Content="Rectangle" Canvas.Left="70" Canvas.Top="370" FontFamily="Comic Sans MS" Foreground="DeepPink" Click="RadioButton_Click"/>
+
+            <TextBlock Canvas.Left="266" Canvas.Top="309" Text="Flavor" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" TextDecorations="Underline" FontWeight="Normal"/>
+            <RadioButton GroupName="Flavor" Name="Chocolate" Content="Chocolate" Canvas.Left="237" Canvas.Top="334" Click="RadioButton_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="Flavor" Name="Strawberry" Content="Strawberry" Canvas.Left="237" Canvas.Top="371" FontFamily="Comic Sans MS" Foreground="DeepPink" Click="RadioButton_Click"/>
+            <RadioButton GroupName="Flavor" Name="Vanilla" Content="Vanilla" Canvas.Left="237" Canvas.Top="408" FontFamily="Comic Sans MS" Foreground="DeepPink" Click="RadioButton_Click"/>
+
+            <TextBlock Canvas.Left="414" Canvas.Top="309" Text="Stripe Color" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" TextDecorations="Underline" FontWeight="Normal"/>
+            <RadioButton GroupName="StripeColor" Name="Red" Content="Red" Canvas.Left="394" Canvas.Top="334" Click="RadioButton_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="StripeColor" Name="Purple" Content="Purple" Canvas.Left="392" Canvas.Top="370" Click="RadioButton_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="StripeColor" Name="ClearStripe" Content="Clear" Canvas.Left="392" Canvas.Top="408" Click="ClearStripe_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+
+            <TextBlock Canvas.Left="570" Canvas.Top="309" Text="Topping" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" TextDecorations="Underline" FontWeight="Normal"/>
+            <RadioButton GroupName="Toppings" Name="Heart" Content="Heart" Canvas.Left="546" Canvas.Top="329" Click="HeartTopping_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="Toppings" Name="Smiley" Content="Smiley" Canvas.Left="546" Canvas.Top="370" Click="Smiley_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <RadioButton GroupName="Toppings" Name="ClearTopping" Content="Clear" Canvas.Left="546" Canvas.Top="408" Click="ClearTopping_Click" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+
+            <Image Name="Topping" Height="49" Canvas.Left="405" Canvas.Top="120" Width="50"/>
+
+            <TextBox Name="TextBox" IsReadOnly="True" Canvas.Left="671" Canvas.Top="91" Text="" TextWrapping="Wrap" Width="152" Height="212" BorderBrush="Lavender" FontFamily="Comic Sans MS" Foreground="DeepPink" Visibility="Collapsed"/>
+            <Button Name="OrderReadyButton" Content="Order Ready!" Canvas.Left="698" Canvas.Top="324" Background="Lavender" FontFamily="Comic Sans MS" Foreground="DeepPink" Click="OrderReadyButton_Click" Visibility="Collapsed"/>
+            <TextBlock Name="ScoreLabel" Canvas.Left="671" Canvas.Top="71" Text="Score:" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" FontWeight="Normal" Visibility="Collapsed"/>
+            <TextBlock Name="Points" Canvas.Left="719" Canvas.Top="71" Text="" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" FontWeight="Normal" Visibility="Collapsed"/>
+            <TextBlock Name="OrderNumber" Canvas.Left="763" Canvas.Top="50" Text="" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" FontWeight="Normal" Visibility="Collapsed"/>
+            <TextBlock Name="OrderLabel" Canvas.Left="717" Canvas.Top="50" Text="Order" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" FontWeight="Normal" Visibility="Collapsed"/>
+
+            <TextBlock Name="CommentBox" Canvas.Left="394" Canvas.Top="58" Text="" TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink"/>
+            <TextBox Name="ReminderBox" Canvas.Top="161" Text="Don't forget to save! Going back to creative mode will reset the challenge mode." TextWrapping="Wrap" FontFamily="Comic Sans MS" Foreground="DeepPink" Width="204" Canvas.Left="10" IsReadOnly="True" BorderBrush="Lavender" Visibility="Collapsed"/>
+            <Rectangle Height="40" Canvas.Left="175" Stroke="Lavender" Fill="Lavender" Width="682"/>
+            <Button Name="CakeDoneButton" Content="My cake's done!" Canvas.Left="698" Canvas.Top="365" Background="Lavender" FontFamily="Comic Sans MS" Foreground="DeepPink" Click="CakeDoneButton_Click"  Visibility="visible"/>
+
+        </Canvas>
+    </Grid>
+</Page>

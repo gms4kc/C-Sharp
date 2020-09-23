@@ -1,0 +1,35 @@
+﻿<Window x:Class="GenevieveSaabCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GenevieveSaabCalculator"
+        mc:Ignorable="d"
+        Title="Cute Calculator" Height="534.272" Width="487.49">
+    <Grid Background="LavenderBlush" Margin="0,0,-0.333,-19.333" HorizontalAlignment="Right" Width="481">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="267*"/>
+            <RowDefinition Height="257*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="TextBlock" HorizontalAlignment="Left" Margin="40,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="116" Width="404" Background="Lavender" FontSize="40" TextAlignment="Right"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="40,107.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="One"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="157,107.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Two"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="268,107.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Three"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="40,30.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Four"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="157,30.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Five"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="268,30.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Six"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="40,226,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.RowSpan="2" Click="Seven"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="157,226,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.RowSpan="2" Click="Eight"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="268,226,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.RowSpan="2" Click="Nine"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="40,175.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Zero"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="268,175.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Decimal"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="369,226,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.RowSpan="2" Click="Minus"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="369,30.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Plus"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="369,107.333,0,0" VerticalAlignment="Top" Width="75" Background="HotPink" Height="115" FontSize="30" Grid.Row="1" Click="Equals"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="369,151,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Click="Multiply"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="268,151,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Click="Divide"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="157,151,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Click="Remainder"/>
+        <Button Content="CLR" HorizontalAlignment="Left" Margin="40,151,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Click="Clear"/>
+        <Button Content="NEG" HorizontalAlignment="Left" Margin="157,175.333,0,0" VerticalAlignment="Top" Width="75" Background="Pink" Height="47" FontSize="30" Grid.Row="1" Click="Negative"/>
+    </Grid>
+</Window>
